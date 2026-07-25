@@ -1,4 +1,4 @@
-### Tutorial de docker 
+# Tutorial de docker 
 
 ## 1-¿Qué problema solucinona? 
 
@@ -9,10 +9,22 @@ Docker soluciona el problema de en mi máquina si funciona.
 
 Empaqueta las carasterísticas en un contenedor para funcionar en cualquier máquina. 
 
-# 2- Archivo Dockerfile 
+## 2- Archivo Dockerfile 
 
 Archivo que indica como tiene que crear el contenedor.
 
-Primera sentencia: 
+Primeras sentencias: 
 
-FROM imagen:versión 
+FROM imagen:versión --> la imágen es la plantilla o molde para crear contenedores
+
+WORKDIR /app --> /app es la carpeta de trabajo  
+
+COPY app.js . --> copia el archivo a la raiz 
+
+CMD ["node", "app.js"] --> Ejecuta los comandos 
+
+## 3- Como contruir una imágen con docker 
+
+Desde la carpeta en la que tenemos el Dockerfile ejecutamos: 
+
+docker build -t nombre-primera-imagen . --> el . es porque estamos dentro de la misma carpeta 
