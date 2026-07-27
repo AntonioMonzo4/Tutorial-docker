@@ -1,0 +1,5 @@
+docker build -t hola-docker . 
+PS C:\Users\amona\Desktop\Docker-Tutorial\Tutorial-docker\hola-docker> docker build -t hola-docker . 
+ERROR: failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: El sistema no puede encontrar el archivo especificado.
+
+Solución: Abrir el docker 

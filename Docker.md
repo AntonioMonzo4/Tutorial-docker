@@ -31,9 +31,15 @@ docker build -t nombre-primera-imagen . --> el . es porque estamos dentro de la 
 
 docker images --> para ver las imágenes que tenemos creadas 
 
-docker run nombre-primera-imagen --> ejecuta el contenedor si ponemso -rm una vez acaba se borra 
+docker run nombre-primera-imagen --> ejecuta el contenedor si ponemos --rm una vez acaba se borra y si ponemos -it lo hacemos iteractivo
 
 docker ps -a --> todos los contenedores que hemos creado 
+
+docker --version 
+
+docker compose version
+
+docker info 
 
 ## 4-Como instalar docker 
 
@@ -49,3 +55,32 @@ total solo a nivel del proceso afectando significativamente al peso, tiempo de a
 
 Docker lo podemos utilizar para desarrollo, pruebas, simular entornos... 
 
+## 6-Imágenes de prueba 
+
+Web: dockerhub.com 
+
+Si no encuentrauna imágen en local la buscara en dockerhub 
+
+## 7-Volumen y builds 
+
+La creación de volumen sirve para la persistencia de datos para crear máquinas.ç
+
+Las builds es para cuantificar los comandos ya sea para el tiempo en memoria el cache.... 
+
+
+## 8-Comandos en la creación 
+
+En docker solo importa el útimo comando porque estos se van sobreescribiendo 
+
+FROM python:3.12
+
+CMD ["echo", "Hola"]
+CMD ["echo", "Adiós"] 
+
+La salida sería Adiós. 
+
+Lo mismo ocurre con Entrypoint: 
+ENTRYPOINT ["python"]
+ENTRYPOINT ["uvicorn"] 
+
+Solo se utilizaría el último 
