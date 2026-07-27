@@ -28,3 +28,7 @@ CMD ["node", "app.js"] --> Ejecuta los comandos
 Desde la carpeta en la que tenemos el Dockerfile ejecutamos: 
 
 docker build -t nombre-primera-imagen . --> el . es porque estamos dentro de la misma carpeta 
+
+docker images --> para ver las imágenes que tenemos creadas 
+
+docker run nombre-primera-imagen --> ejecuta el contenedor 
