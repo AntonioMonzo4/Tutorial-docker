@@ -17,7 +17,7 @@ Primeras sentencias:
 
 FROM imagen:versión --> la imágen es la plantilla o molde para crear contenedores
 
-WORKDIR /app --> /app es la carpeta de trabajo  
+WORKDIR /app --> /app es la carpeta de trabajo sino se ejecuta en raíz
 
 COPY app.js . --> copia el archivo a la raiz 
 
