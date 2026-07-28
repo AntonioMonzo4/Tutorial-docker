@@ -1,0 +1,12 @@
+{
+  "name": "node-web",
+  "version": "1.0.0",
+  "description": "Aplicación Node con Docker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
