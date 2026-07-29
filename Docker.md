@@ -84,3 +84,13 @@ ENTRYPOINT ["python"]
 ENTRYPOINT ["uvicorn"] 
 
 Solo se utilizaría el último 
+
+## COMANDO IMPORTANTE 
+
+docker init 
+
+docker search ubuntu
+
+docker tag renombre 
+
+docker push nombre-imagen-que-subimod:0.0.1

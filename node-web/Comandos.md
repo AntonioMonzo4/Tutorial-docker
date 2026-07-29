@@ -35,4 +35,12 @@ docker ps -a --> listar todos los contenedores aunque non esten encendidos
 
 docker stop id --> para contenedor 
 
-docker run -d -p 5005:3000 -e SALUDO="Hola Mundo docker"
+docker run -d -p 5005:3000 -e SALUDO="Hola Mundo docker" --name node-web
+
+docker run -d -p 5005:3000 --env-file .env --name node-web
+
+docker sytem df--> visualizas el sitema 
+
+docker system prune --> elimina lo que no se utilicen 
+
+docker clear todo
